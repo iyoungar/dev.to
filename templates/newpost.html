@@ -1,0 +1,91 @@
+{% load static %}
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel='stylesheet' type='text/css' href= "{% static '/csss/main.css'%}">
+    <link rel='stylesheet' type='text/css' href= "{% static '/csss/bootstrap.css'%}">
+    <title>Document</title>
+</head>
+<body>     
+    {% include "navbar.html" %}
+    {% block content %}
+    {% endblock %}
+    {% load static %}     
+    <div class="row">
+
+        <div class="col-2">
+            <div>
+            
+                <h6> <img class = 'propic' src="../static/images/iss.JPG" > Ynng Ani </h6>
+                <p>@niui</p>
+                <div class="borless">
+                    <a class="list-group-item list-group-item-action" href="#reading">Reading List</a>
+                    <a class="list-group-item list-group-item-action" href="#listing">Listing</a>
+                    <a class="list-group-item list-group-item-action" href="#podcast">Podcasts</a>
+                    <a class="list-group-item list-group-item-action" href="#Tags">Tags</a>
+                    <a class="list-group-item list-group-item-action" href="#More..">More</a>
+                </div>
+            </div> 
+    <br>
+    <br>
+    <br>
+                
+    
+            <div id="list-example" class="list-group">
+                <a class="list-group-item list-group-item-action" href="#tag">#tag</a>
+                <a class="list-group-item list-group-item-action" href="#gob">#gob</a>
+                <a class="list-group-item list-group-item-action" href="#mob">#mob 3</a>
+                <a class="list-group-item list-group-item-action" href="#ttg">#ttg</a>
+            </div>
+        </div>
+        
+        <div class="col-8 cardio"> 
+            <form action="" method="POST">
+
+            {% csrf_token   %}
+                <div>
+                    <input class="sbox" type="text" name="author" placeholder="Author inform here">
+                </div>
+
+                <div>
+                    <input class="sbox" type="text" name="title"  placeholder=" Enter Title">
+                </div>
+
+                <div>
+                    <input class="bbox" type="text" name="message" id="" placeholder="write content">
+                </div>
+
+                <div>
+                    <input class="sbox" type="text" name="message"  id="" placeholder="enter tags">
+                </div>
+
+                <input type="submit" value="submit" class= "smit">    
+            </form>
+        </div>
+
+        <div class= "col-2">
+        
+            <div class="card">
+                <img src="../static/images/tree.JPG" class="card-img-top" alt="...">
+              
+                <ul class="list-group list-group-flush"> 
+                  <li class="list-group-item sidebar"> <a href="#"> <h5>Stories(124) </h5></a></li>
+                  <li class="list-group-item sidebar"> <a href="#">Build a Pomodoro clock using Github actions! </a></li>
+                  <li class="list-group-item"> <a href="#">Automating the review process of your React Native Library's PRs </a> </li>
+                  <li class="list-group-item"> <a href="#"> Publish to Snapcraft Store</a> </li>
+                  <li class="list-group-item"> <a href="#"> Automating releases of Github Action that depends on another repository</a></li>
+                  <li class="list-group-item"> <a href="#"> SMS Notifications with Action Africastalking</a></li>
+                  <button type="button" class="btn btn-primary">Share your project</button>
+                  <button type="button" class="btn btn-light">See all posts</button>                
+                </ul>
+
+            </div>
+
+        </div>
+
+    </div>
+</body>
+</html>

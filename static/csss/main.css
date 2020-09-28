@@ -1,0 +1,104 @@
+
+.nabar{
+    background-color: fff;
+    height: 40px;
+}
+.dev{
+    background-color: black;
+    color: white;
+    border-radius: 10%;
+    font-size: 20px;
+}
+.search{
+    margin-left: 10px;
+    background-color: #F9FAFA;
+
+}
+.button { border-radius: 10%;
+}
+.boby{
+    background-color: #EEF0F1;
+}
+.post{
+    font-weight: bolder;
+    color: black;
+}
+.flex-container {
+    display: flex;
+    justify-content: left;
+  }
+.propic{
+    height: 40px;
+    width: 40px;
+    border-radius: 40%;
+}
+.box{
+    background-color: black;
+    text-align: center;
+    margin-top:  1rem;
+}
+.rext{
+    text-align: center;
+    
+}
+.all{background-color: #EEF0F1;
+
+}
+.space{
+    width: 400px;
+    height: 50px;
+    border-radius: 5%;
+}
+.create{
+    width: 400px;
+    height: 50px;
+    background-color: #3B49DF;
+    border-radius: 5%;
+    align-content: center;
+}
+.btn{
+    width: auto;
+}
+.sidebar{
+color: black;
+}
+.ground{
+    background-color: #EEF0F1;
+    margin-top: 1rem;
+}
+.postpage{
+    background-color: yellowgreen;
+    text-align: center;
+    width: 22rem;
+    margin: auto;
+}
+
+.main{
+    margin-top: 3rem;
+}
+.lin{
+    color: black;
+}
+.borless{
+    border-color: transparent;
+    
+}
+.list-group-item{
+    background-color: #EEF0F1;
+}
+.sbox{
+    background-color: red;
+}
+.sbox{
+width: 18rem;
+margin-top: 2rem;
+float: center;
+}
+.bbox{
+width: 18rem;
+height: 10rem;
+margin-top: 2rem;
+}
+.smit{
+    margin-top: 1rem;
+}

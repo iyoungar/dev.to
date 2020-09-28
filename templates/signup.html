@@ -1,0 +1,44 @@
+
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href= "{% static 'csss/main.css' %}" >
+    <link rel="stylesheet" type="text/css" href="{% static 'csss/bootstrap.css' %} ">
+    <title> signup</title>
+</head>
+
+
+<body class="all">
+    {% include "navbar.html" %}
+    {% block content %} 
+    {% endblock %}
+
+   
+  <form method="POST" action="">
+    {% csrf_token %}
+    
+    <div class="card box container" >
+      <h2 class="card-title"> Welcome to DEV </h2>
+      <p class=""> <a href="#"> DEV </a> is a community of 459,187 amazing developers.</p>
+      <h6 class="rext"> UserName <br>
+        {{form.username}} </h6>
+      <h6 class="rext"> Email <br>
+        {{form.email}}</h6>
+      <h6 class="rext"> Password <br>
+        {{form.password1}} </h6>
+      <h6 class="rext"> Re-enter Password <br>
+        {{form.password2}} </h6> <br>
+      <input type="submit" class="create" value="Create Account">
+    </div>
+     
+        
+          
+
+      
+      </div>
+
+  </form>
+<br>
+{{form.errors}}
+</body>

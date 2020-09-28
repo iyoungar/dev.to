@@ -1,0 +1,114 @@
+
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' type='text/css' href= "{% static '/css/main.css'%}">
+    <link rel="stylesheet" type="text/css" href="{% static '/css/bootstrap.css'%}">
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css">
+    <title>home</title>
+</head>
+<body class="ground">
+    {% include "navbar.html" %}
+    {% block content %}
+    {% endblock %}
+    {% load static %}
+    <div class="row container-fluid main">
+        <div class="col-3">
+            
+            <h6> <img class = 'propic' src="../static/images/iss.JPG" > Ynng Ani </h6>
+            <p>@niui</p>
+            <div class="borless">
+                <a class="list-group-item list-group-item-action" href="#reading">Reading List</a>
+                <a class="list-group-item list-group-item-action" href="#listing">Listing</a>
+                <a class="list-group-item list-group-item-action" href="#podcast">Podcasts</a>
+                <a class="list-group-item list-group-item-action" href="#Tags">Tags</a>
+                <a class="list-group-item list-group-item-action" href="#More..">More</a>
+            </div>
+            
+<br>
+<br>
+<br>
+            
+
+            <div id="list-example" class="list-group">
+                <a class="list-group-item list-group-item-action" href="#tag">#tag</a>
+                <a class="list-group-item list-group-item-action" href="#gob">#gob</a>
+                <a class="list-group-item list-group-item-action" href="#mob">#mob 3</a>
+                <a class="list-group-item list-group-item-action" href="#ttg">#ttg</a>
+              </div>
+            
+        </div>
+        <div class="col-6">
+            <div class=>  
+                <nav class="navbar navbar-expand-lg navbar-light link flex-container ">
+                    <div >
+                      <a class='post' href="#" > Post </a>
+                    </div>
+
+                    <div class="flex-container">
+                      <a class="nav-link" href="#">Feed </a>
+                      <a class="nav-link" href="#">Week</a>
+                      <a class="nav-link" href="#">Year</a>
+                      <a class="nav-link" href="#">Infinity</a>
+                      <a class="nav-link" href="#">Lastest</a>
+                    </div>
+                    
+                </nav>
+            </div>
+            
+                <!-- <div class="card box container" > 
+                    <div class="card-body">
+                      <h2 class="card-title">Welcome to DEV</h2>
+                      <p class=""> <a href="#">DEV</a> is a community of 459,187 amazing developers.</p>
+                      <h6 class="rext"> UserName <br>
+                        {{form.username}} </h6>
+                      <h6 class="rext"> Email <br>
+                      {{form.email}}</h6>
+                      <h6 class="rext"> Password <br>
+                      {{form.password1}} </h6>
+                      <h6 class="rext"> Re-enter Password <br>
+                      {{form.password2}} </h6> <br>
+                      <input type="submit" class="create" value="Create Account">
+                    </div>
+                  </div> -->
+                
+                  <div class="card mb-3">
+                    <img src="../static/images/jam.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                    
+                      <h3 class="card-title">What is JAMstack </h3>
+                      <p class="card-text">#jamstack #javastack #codeguy #react #coder </p>
+                      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                    </div>
+                  </div>
+
+                  <div class="postcreationpage">
+                    {% include "postcreationpage.html" %}
+                    {% block title %}
+                    {% endblock %}
+                    {% load static %}
+                  </div>
+        </div>
+        <div class="col-3">
+            <div class="card" style="width: 18rem;">
+                <img src="../static/images/tree.JPG" class="card-img-top" alt="...">
+              
+                <ul class="list-group list-group-flush"> 
+                  <li class="list-group-item sidebar"> <a href="#"> <h5>Stories(124) </h5></a></li>
+                  <li class="list-group-item sidebar"> <a href="#">Build a Pomodoro clock using Github actions! </a></li>
+                  <li class="list-group-item"> <a href="#">Automating the review process of your React Native Library's PRs </a> </li>
+                  <li class="list-group-item"> <a href="#"> Publish to Snapcraft Store</a> </li>
+                  <li class="list-group-item"> <a href="#"> Automating releases of Github Action that depends on another repository</a></li>
+                  <li class="list-group-item"> <a href="#"> SMS Notifications with Action Africastalking</a></li>
+                  <button type="button" class="btn btn-primary">Share your project</button>
+                  <button type="button" class="btn btn-light">See all posts</button>                
+                </ul>
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>

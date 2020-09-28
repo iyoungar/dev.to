@@ -1,0 +1,47 @@
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' type='text/css' href= "{% static '/css/main.css'%}">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div class="postcreationpage">
+        {% for i in blog %}
+        <div class="mmm" style="border:white solid 3px; background-color: white;   margin-bottom: 1em;">
+            <a href=""> 
+                <div class="float: left;">
+                    <img class="propic" src="../static/images/iss.JPG" alt="" style="margin-right: 10px;">
+                </div>
+                <h5>{{i.author}}</h5>
+                <p style="margin-left: 20px; margin-top: -10px;">{{i.author}}</p>
+            </a>
+            <h3>
+                <a href="{% url 'post' %}">{{i.title}}</a>
+            </h3>
+            <p> 
+                <a href="{% url 'post' %}">{{i.tags}}</a>
+            </p>
+        </div> 
+        {% endfor%}
+        <div class="mmm" style="border:white solid 3px; background-color: white;   margin-bottom: 1em;">
+            <a href=""> 
+                <div style="float: left;">
+                    <img class="propic" src="../static/images/iss.JPG" alt="" style="margin-right: 10px;">
+                </div>
+                <h5>Ynng Ani</h5>
+                <p style="margin-left: 20px; margin-top: -10px;">@ynngani</p>
+            </a>
+            <h3>
+                <a href="#">Upgrade Invitation from HUAWEI Analytics Kit</a>
+            </h3>
+            <p>#tutorial    #opensource         #android</p>
+                        </div> 
+    </div>
+    
+    
+
+</body>
+</html>
