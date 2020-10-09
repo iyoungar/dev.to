@@ -21,21 +21,25 @@
                     <img class="propic" src="../static/images/iss.JPG" alt="" style="margin-right: 10px;">
                 </div>
                 <h5>Ynng</h5>
-                <p> {{i.author}} </p>
+                
             </a>
-
+            {% for i in posts %}
+            <h4 class="head"> {{i.title}}</h4>
+            <p class="body">{{i.body}}</p>
+            <p class="tags">{{i.tags}}</p>
+            {% endfor %}
             <h3>
                 Muisc
             </h3>
 
             
 
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br> 
+            <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br> 
                 
                 At modi quasi repudiandae. Odit magnam quibusdam nobis <br>
                 qui maiores quae assumenda nam nostrum voluptate asperiores.<br>
                 Aliquam blanditiis saepe perferendis commodi cum.<br>
-            </p>
+            </p> -->
             <p> 
                 <a href=" "> #muisc #tag #kgj </a>
             </p>

@@ -87,18 +87,41 @@ color: black;
     background-color: #EEF0F1;
 }
 .sbox{
-    background-color: red;
-}
-.sbox{
 width: 18rem;
 margin-top: 2rem;
 float: center;
+background-color: greenyellow;
 }
 .bbox{
 width: 18rem;
 height: 10rem;
 margin-top: 2rem;
+background-color: hotpink;
+text-align: left;
 }
 .smit{
     margin-top: 1rem;
+}
+.hello{
+    font-size: 18px;
+    color: palevioletred;
+}
+.head{
+    font-size: 18px;
+    font-weight: bolder;
+    background-color: deeppink;
+}
+.body{
+    font-size: 15px;
+    
+}
+.tags{
+    font-size: 13px;
+    
+}
+.cardio{
+background-color: rgb(138, 133, 128);
+}
+.wap{
+    color: white;
 }

@@ -19,10 +19,10 @@
                 <p style="margin-left: 20px; margin-top: -10px;">{{i.author}}</p>
             </a>
             <h3>
-                <a href="{% url 'post' %}">{{i.title}}</a>
+                <a href="{% url 'posts' %}">{{i.title}}</a>
             </h3>
             <p> 
-                <a href="{% url 'post' %}">{{i.tags}}</a>
+                <a href="{% url 'posts' %}">{{i.tags}}</a>
             </p>
         </div> 
         {% endfor%}

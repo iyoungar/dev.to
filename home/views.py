@@ -1,6 +1,7 @@
 from django.shortcuts import render
 from django.http import HttpResponse
 from home.models import UserPost
+from home.models import Post
 
 #from .form import Postform
 # Create your views here.
@@ -20,6 +21,9 @@ def homepage(request):
 
   return render (request, "main.html", context)
 
+def posts(request):
+  posts = UserPost.objects.all() 
+  return render (request, "postpage.html", {'posts':posts});
 
  
 #def postFormView(request):

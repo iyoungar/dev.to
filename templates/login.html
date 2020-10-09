@@ -1,29 +1,36 @@
 {% load static %}
-<!DOCTYPE html>
-<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel='stylesheet' type='text/css' href= "{% static '/css/main.css'%}">
-    <link rel="stylesheet" type="text/css" href="{% static '/css/bootstrap.css'%}">
+    <link rel='stylesheet' type='text/css' href= "{% static '/csss/main.css'%}">
+    <link rel="stylesheet" type="text/css" href="{% static '/csss/bootstrap.css'%}">
     <title>Login</title>
 </head>
 <body>
     {% include "navbar.html" %}
     {% block content %}
 	{% endblock %}
-	
 	<form method = "POST" action="">
-    {% csrf_token %}
-		<div class="card box container" >
-			<h2 class="card-title">Welcome to DEV</h2>
+	{% csrf_token %}
+	{{form.username}}
+		<div class="card box container"
+			<h2 class="card-title"> Welcome to DEV</h2>
 			<p class=""> <a href="#">DEV </a> is a community of 459,187 amazing developers.</p>
 			<h6 class="rext"> UserName <br>
-				{{form.username}} </h6>
+				<input type="text" name='username' placeholder= "username..."
+			</h6>
 			<h6 class="rext"> Password <br>
-			  {{form.password1}} </h6>
-			<input type="submit" class="create" value="Login">
-		</div>	
+				<input type='password' name='password' placeholder="Password.."
+			</h6><br>
+			<input type="submit" value="Login">
+			{% for message in messages %}
+				<p> {{message}} </p>
+			{% endfor %}
+			<p> Don't have an account?
+				<a href="{% url 'signup' %}">Signup</a>
+			</p>
+		</div>
+		
 	</form>
 	<br>
 {{form.errors}}

@@ -16,7 +16,9 @@
             <a class="dev" href="{% url 'homepage' %}"> DEV </a>
             <input class="form-control mr-sm-2 search" type="search" placeholder="Search" aria-label="Search"> 
         </form>
-        <button class="btn" type="submit"> <a href="{% url 'login' %}"> Log In </a> </button>
+        <button class="btn" type="submit"> <a href="{% url 'loginPage' %}"> Log In </a> </button>
+        <span class="hello"> Hello, {{request.user}} </span>
+        <span><a href="{% url 'logoutUser' %}"> Logout </a> </span>
         <button class="btn btn-primary my-2 my-sm-0" type="submit"> <a href="{% url 'newpost' %}"> Write a post </a></button>
     </nav>
 </body>

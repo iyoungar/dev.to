@@ -1,11 +1,8 @@
 from django.shortcuts import render
 from django.http import HttpResponse
+from .models import *
 # Create your views here.
 
-def post(request):
-
-    
-    return render (request, "postpage.html", {});
  
 def newpost(request):
 
